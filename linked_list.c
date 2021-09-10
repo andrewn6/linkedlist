@@ -4,6 +4,14 @@
 struct Node {
     int data;
     struct Node* next;
+};
+
+void printList(struct Node* n)
+{
+    while (n != NULL) {
+          printf("%d ", n->data);
+          n = n->next;
+    }
 }
 
 int main()
@@ -31,12 +39,4 @@ int main()
     return 0;
 }
 
-
-void printList(struct Node* n)
-{
-    while (n != NULL) {
-        printf("%d ", n->data);
-        n = n->next;
-    }
-}
 
